@@ -1,0 +1,6 @@
+{
+    "name": "<%= _appName %>",
+    "version": "<%= version %>",
+    "author": "<%= author %>"<% if ( typeof repo === 'string' ) { %>,
+    "repository": "<%= repo %>"<% } %>
+}

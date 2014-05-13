@@ -1,0 +1,6 @@
+{
+    "name": "<%= _appName %>",
+    "version": "<%= version %>",
+    "main": "main.js",
+    "author": "<%= author %>"
+}
