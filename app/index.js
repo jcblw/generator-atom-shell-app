@@ -62,9 +62,9 @@ var AtomShellAppGenerator = yeoman.generators.Base.extend({
         this._appName = this._dashize( this.appName );
         this.mkdir( this._appName );
         this.mkdir( this._appName + '/src');
-        this.template('application/main.js', this._appName + '/src/main.js');
-        this.template('application/package.json', this._appName + '/src/package.json');
-        this.template('application/index.html', this._appName + '/src/index.html');
+        this.template('src/main.js', this._appName + '/src/main.js');
+        this.template('src/package.json', this._appName + '/src/package.json');
+        this.template('src/index.html', this._appName + '/src/index.html');
         this.template('package.json', this._appName + '/package.json');
         this.template('README.md', this._appName + '/README.md');
     }

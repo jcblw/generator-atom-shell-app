@@ -8,10 +8,7 @@ First you will need [atom-shell](https://github.com/atom/atom-shell), macs have 
 
 To install the this app just clone this repo and enter the directory.
 
-    <% if ( typeof repo === 'string' ) { %>
-    $ git clone {%= repo %}
-    <% } %>
-    $ cd <% _appName %>
+    $ cd <%= _appName %>
 
 ## Running 
 
