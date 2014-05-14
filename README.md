@@ -1,28 +1,14 @@
 # generator-atom-shell-app [![Build Status](https://secure.travis-ci.org/jacoblwe20/generator-atom-shell-app.png?branch=master)](https://travis-ci.org/jacoblwe20/generator-atom-shell-app)
 
-> [Yeoman](http://yeoman.io) generator
-
+This is a baseline app for [atom-shell](https://github.com/atom/atom-shell) that pretty much is the instructions that are given on in [Atom-Shell's Getting Started](https://github.com/atom/atom-shell/blob/master/docs/tutorial/quick-start.md)
 
 ## Getting Started
 
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+You will need to have [Yeoman](http://yeoman.io) installed.
 
 ```bash
 $ npm install -g yo
 ```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
 To install generator-atom-shell-app from npm, run:
 
 ```bash
@@ -35,11 +21,27 @@ Finally, initiate the generator:
 $ yo atom-shell-app
 ```
 
-### Getting To Know Yeoman
+## Running 
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+To run the app its super simple just run the atom binary given to you while installing [atom-shell](https://github.com/atom/atom-shell) against the `src` directory.
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+    $ ~/path-to/atom src
+
+A window will open with the version of NodeJS and atom-shell
+
+## Development
+
+To build on the the app all the files reside in the `application` directory.
+
+    <% _appName %>
+    └── src
+        ├── package.json
+        ├── main.js*
+        └── index.html
+
+With atom-shell the entry point is a javascript file specified in the `package.json` and in this application it is `main.js`
+
+ready for more [atom-shell docs](https://github.com/atom/atom-shell/tree/master/docs)
 
 
 ## License
