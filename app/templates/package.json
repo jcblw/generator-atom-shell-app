@@ -1,6 +1,14 @@
 {
     "name": "<%= _appName %>",
     "version": "<%= version %>",
-    "author": "<%= author %>"<% if ( typeof repo === 'string' ) { %>,
-    "repository": "<%= repo %>"<% } %>
+    "author": "<%= author %>",<% if ( typeof repo === 'string' ) { %>
+    "repository": "<%= repo %>",<% } %>
+    "dependencies": {
+        "grunt-download-atom-shell": "~0.7.0",
+        "grunt": "~0.4.5"
+    },
+
+    "scripts": {
+        "start": "grunt build && ./dist/bin/Atom.app/Contents/MacOS/Atom ./src"
+    }
 }
