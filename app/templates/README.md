@@ -10,7 +10,7 @@ To install the this app just clone this repo and enter the directory.
 
     $ cd <%= _appName %>
 
-## Running 
+## Running
 
 To run the app its super simple just run the atom binary given to you while installing [atom-shell](https://github.com/atom/atom-shell) against the `application` directory.
 

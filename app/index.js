@@ -56,7 +56,7 @@ var AtomShellAppGenerator = yeoman.generators.Base.extend({
             .trim()
             .toLowerCase()
             .replace(/ /g, '-');
-    }, 
+    },
 
     app: function () {
         this._appName = this._dashize( this.appName );
