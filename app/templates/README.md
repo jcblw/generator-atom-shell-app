@@ -12,18 +12,14 @@ To install the this app just clone this repo and enter the directory.
 
 ## Running
 
-To run the app its super simple just run the atom binary given to you while installing [atom-shell](https://github.com/atom/atom-shell) against the `application` directory.
-
-    $ ~/path-to/atom src
-
-A window will open with the version of NodeJS and atom-shell
+To run the app, just run `$ npm start`. A window will open with your application embedded within atom-shell.
 
 ## Development
 
-To build on the the app all the files reside in the `application` directory.
+To build on the the app all the files reside in the `app` directory.
 
     <% _appName %>
-    └── src
+    └── app
         ├── package.json
         ├── main.js*
         └── index.html

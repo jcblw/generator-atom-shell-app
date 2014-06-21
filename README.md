@@ -23,9 +23,9 @@ $ yo atom-shell-app
 
 ## Running 
 
-To run the app its super simple just run the atom binary given to you while installing [atom-shell](https://github.com/atom/atom-shell) against the `src` directory.
+To run the app its super simple just run the atom binary given to you while installing [atom-shell](https://github.com/atom/atom-shell) against the `app` directory.
 
-    $ ~/path-to/atom src
+    $ ~/path-to/atom app
 
 A window will open with the version of NodeJS and atom-shell
 
@@ -34,7 +34,7 @@ A window will open with the version of NodeJS and atom-shell
 To build on the the app all the files reside in the `application` directory.
 
     <% _appName %>
-    └── src
+    └── app
         ├── package.json
         ├── main.js*
         └── index.html

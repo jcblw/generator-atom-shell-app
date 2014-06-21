@@ -61,10 +61,10 @@ var AtomShellAppGenerator = yeoman.generators.Base.extend({
     app: function () {
         this._appName = this._dashize( this.appName );
         this.mkdir( this._appName );
-        this.mkdir( this._appName + '/src');
-        this.template('src/main.js', this._appName + '/src/main.js');
-        this.template('src/package.json', this._appName + '/src/package.json');
-        this.template('src/index.html', this._appName + '/src/index.html');
+        this.mkdir( this._appName + '/app');
+        this.template('app/main.js', this._appName + '/app/main.js');
+        this.template('app/package.json', this._appName + '/app/package.json');
+        this.template('app/index.html', this._appName + '/app/index.html');
         this.template('package.json', this._appName + '/package.json');
         this.template('README.md', this._appName + '/README.md');
         this.template('Gruntfile.js', this._appName + '/Gruntfile.js');
