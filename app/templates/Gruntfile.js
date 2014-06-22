@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         app: {
             expand: true,
             src: ['app/**'],
-            dest: "bin/<%= dest %>"
+            dest: "bin/<%%= dest %>"
         }
     }
   });

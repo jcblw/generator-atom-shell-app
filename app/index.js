@@ -11,9 +11,9 @@ var AtomShellAppGenerator = yeoman.generators.Base.extend({
         this.pkg = require('../package.json');
 
         this.on('end', function () {
-            // if (!this.options['skip-install']) {
-            //     this.installDependencies();
-            // }
+            if (!this.options['skip-install']) {
+                this.installDependencies();
+            }
         });
     },
 
@@ -60,14 +60,12 @@ var AtomShellAppGenerator = yeoman.generators.Base.extend({
 
     app: function () {
         this._appName = this._dashize( this.appName );
-        this.mkdir( this._appName );
-        this.mkdir( this._appName + '/app');
-        this.template('app/main.js', this._appName + '/app/main.js');
-        this.template('app/package.json', this._appName + '/app/package.json');
-        this.template('app/index.html', this._appName + '/app/index.html');
-        this.template('package.json', this._appName + '/package.json');
-        this.template('README.md', this._appName + '/README.md');
-        this.template('Gruntfile.js', this._appName + '/Gruntfile.js');
+        this.template('app/main.js', 'app/main.js');
+        this.template('app/package.json', 'app/package.json');
+        this.template('app/index.html', 'app/index.html');
+        this.template('package.json', 'package.json');
+        this.template('README.md', 'README.md');
+        this.template('Gruntfile.js', 'Gruntfile.js');
     }
 });
 

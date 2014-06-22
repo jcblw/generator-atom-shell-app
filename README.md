@@ -9,25 +9,28 @@ You will need to have [Yeoman](http://yeoman.io) installed.
 ```bash
 $ npm install -g yo
 ```
+
 To install generator-atom-shell-app from npm, run:
 
 ```bash
 $ npm install -g generator-atom-shell-app
 ```
 
-Finally, initiate the generator:
+Create a new empty directory for you project, and `cd` into it:
+
+```bash
+$ mkdir app-name && cd $_
+```
+
+Finally, initiate the generator from within your application directory:
 
 ```bash
 $ yo atom-shell-app
 ```
 
-## Running 
+## Running
 
-To run the app its super simple just run the atom binary given to you while installing [atom-shell](https://github.com/atom/atom-shell) against the `app` directory.
-
-    $ ~/path-to/atom app
-
-A window will open with the version of NodeJS and atom-shell
+To run the app, just run `$ npm start`. A window will open with your application embedded within atom-shell.
 
 ## Development
 
