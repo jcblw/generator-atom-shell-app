@@ -46,6 +46,16 @@ With atom-shell the entry point is a javascript file specified in the `package.j
 
 ready for more [atom-shell docs](https://github.com/atom/atom-shell/tree/master/docs)
 
+## Packaging
+
+To package your application as a distributable binary, just run:
+
+    $ grunt package
+
+The distributable file will be created in the `/bin` directory at the root of your project.
+
+See the [atom-shell application distribution](https://github.com/atom/atom-shell/blob/master/docs/tutorial/application-distribution.md) wiki for more info.
+
 
 ## License
 
