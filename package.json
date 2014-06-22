@@ -1,6 +1,6 @@
 {
   "name": "generator-atom-shell-app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -20,7 +20,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator, atom-shell"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
