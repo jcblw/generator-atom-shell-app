@@ -1,23 +1,29 @@
 /* global require, __dirname, process */
+(function () {
+    'use strict';
 
-'use strict';
+    var app = require('app'),
+        BrowserWindow = require('browser-window');
 
-var app = require('app'), 
-    BrowserWindow = require('browser-window');
+    // reports crashes to github
+    require('crash-reporter');
 
-// reports crashes to github
-require('crash-reporter');
-
-app.on( 'ready', function ( ) {
-    var mainWindow = new BrowserWindow({ 
-      width : 200, 
-      height : 400 
+    // Quit when all windows are closed.
+    app.on('window-all-closed', function() {
+        app.quit();
     });
 
-    mainWindow.loadUrl('file://' + __dirname + '/index.html');
+    // When app is ready to run...
+    app.on( 'ready', function ( ) {
+        var mainWindow = new BrowserWindow({
+          width : 200,
+          height : 400
+        });
 
-    mainWindow.on( 'closed', function ( ) {
-        mainWindow = null;
+        mainWindow.loadUrl('file://' + __dirname + '/index.html');
+
+        mainWindow.on( 'closed', function ( ) {
+            mainWindow = null;
+        });
     });
-});
-
+}());
