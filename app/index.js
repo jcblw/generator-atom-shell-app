@@ -29,7 +29,7 @@ var AtomShellAppGenerator = yeoman.generators.Base.extend({
             default: 'Test Atom App'
         },{
             name: 'version',
-            message: 'What verison is your app',
+            message: 'What version is your app',
             default: '0.0.0'
         },{
             name: 'repo',
