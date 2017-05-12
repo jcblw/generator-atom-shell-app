@@ -1,5 +1,7 @@
 # generator-atom-shell-app [![Build Status](https://secure.travis-ci.org/jacoblwe20/generator-atom-shell-app.png?branch=master)](https://travis-ci.org/jacoblwe20/generator-atom-shell-app)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jcblw/generator-atom-shell-app.svg)](https://greenkeeper.io/)
+
 This is a baseline app for [atom-shell](https://github.com/atom/atom-shell) that pretty much is the instructions that are given on in [Atom-Shell's Getting Started](https://github.com/atom/atom-shell/blob/master/docs/tutorial/quick-start.md)
 
 ## Getting Started
